@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#user_input {
+    display: none;
+}
+#msg_input {
+    width: 100%;
+    height: 5em;
+}
+
+#input_box {
+    width: 40em;
+}
+
+#div_list {
+    margin-top: 2em;
+    overflow: scroll;
+    height: 20em;
+    width: 40em;
+    border: 4px double green;
+    margin-bottom: 1em;
+}
+
+#ul_list li {
+    margin-top: 0.3em;
+}

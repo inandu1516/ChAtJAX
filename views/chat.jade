@@ -1,0 +1,27 @@
+extends layout
+
+block content
+
+    body(onload="start()")
+    h2 Benvingut al ChAtJAX, #{nick} !
+    i.
+        (El contingut del chat, color Verd, s'anirá actualitzant automáticament mitjançant AJAX, que fará peticions al servidor Express
+        amb intervals de 2,5 segons.<br>El servidor retornará la pila missatges actualitzada i AJAX creará
+        la llista al client mitjançant modificació del DOM amb JS.<br>AJAX ens permet d'aquesta manera actualitzar el contingut
+        del chat sense la necesitat de refrescar la página sencera.
+
+    div#div_list
+        ul#ul_list
+
+    div#input_box
+        input#user_input(type="text" size=10 value=nick)
+        textarea#msg_input(placeholder="Escriu nou missatge ...")
+
+
+    form(action="/public/uploads/" method="POST" enctype="multipart/form-data")
+        b Select a file to upload to the Server
+        input(type="file", name="client_file")
+        input(type="submit", value="Upload File")
+
+    //AJAX script (costat-client)
+    script(src='/javascripts/ajax.js')
