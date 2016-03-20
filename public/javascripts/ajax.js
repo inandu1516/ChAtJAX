@@ -1,3 +1,7 @@
+//#########################################
+//########    COSTAT CLIENT     ###########
+//#########################################
+
 var user_input = document.getElementById('user_input');
 var msg_input = document.getElementById('msg_input');
 var message = document.getElementById('message');
